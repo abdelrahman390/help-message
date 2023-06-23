@@ -20,7 +20,7 @@ highLiteBoxH4 = document.querySelectorAll(".main_box .right_side .Personal_info 
 highLiteBox[0].style.cssText  = "position: relative; z-index: 7;"
 highLiteBoxH4[0].classList.add("active")
 skipBox[0].style.display = "flex" 
-
+document.querySelector(".main_box").style.zIndex = "unset"
 
 
 skipButton.forEach((element , index)=> {
@@ -37,6 +37,7 @@ skipButton.forEach((element , index)=> {
             skipBox[index].style.display = "none"
             overLayDiv.style.display = "none"
             highLiteBoxH4[index].classList.remove("active")
+            document.querySelector(".main_box").style = ""
         }
 
 
