@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Multi-step form</title>
+</head>
+<body>
+  <div class="helpDiv"></div>
+  <div class="phone_backgrond"><img src="assets/images/bg-sidebar-mobile.png" alt=""></div>
+
+<div class="max_width">
+  <div class="main_box">
+      <div class="lift_side">
+      <div class="container">
+            <div class="box">
+              <span class="on">1</span>
+              <div class="text">
+                <h4>step 1</h4>
+                <h3>Your info</h3>
+              </div>
+            </div>
+            <div class="box">
+              <span>2</span>
+              <div class="text">
+                <h4>step 2</h4>
+                <h3>Select plan</h3>
+              </div>
+            </div>
+            <div class="box">
+              <span>3</span>
+              <div class="text">
+                <h4>step 3</h4>
+                <h3>Add-ons</h3>
+              </div>
+            </div>
+            <div class="box">
+              <span>4</span>
+              <div class="text">
+                <h4>step 4</h4>
+                <h3>Summary</h3>
+              </div>
+            </div>
+
+        </div>
+      </div>
+      <div class="right_side">
+
+
+        <div class="Personal_info">
+          <div class="header">
+            <h1>Personal info</h1>
+            <h4>Please provide your name, email address, and phone number.</h4>
+          </div>
+          <div class="box">
+            <div class="textAndWarning">
+              <h4>Name</h4>
+              <span>Name must not contain numbers</span>
+              <h4 class="req">this field is required</h4>
+            </div>
+            <input class="" data-name="Name" type="text" placeholder="e.g. Stephen King">
+            <div class="helpBox"><h4>Enter your name without numbers</h4><button>Next</button></div>
+          </div>
+          <div class="box">
+            <div class="textAndWarning">
+              <h4>Email Address</h4>
+              <span>Email not valid</span>
+              <h4 class="req">this field is required</h4>
+            </div>
+            <input class="" data-name="Email" type="text" placeholder="e.g. stephenking@lorem.com">
+            <div class="helpBox"><h4>Inter your email correctly</h4><button>above</button></div>
+          </div>
+          <div class="box">
+            <div class="textAndWarning">
+              <h4>Phone Number</h4>
+              <span>Please inter egyption right number</span>
+              <h4 class="req">please this field is required</h4>
+            </div>
+            <input data-name="Phone" type="text" placeholder="e.g. 01000000000">
+            <div class="helpBox"><h4>Inter your egyption number</h4><button>Close</button></div>
+          </div>
+        </div>
+
+        <button class="right" type="button" id="right">Next Step</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="buttom_background"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
